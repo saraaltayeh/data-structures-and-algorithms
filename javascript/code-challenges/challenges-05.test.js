@@ -200,7 +200,7 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -212,7 +212,7 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -233,7 +233,7 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  // Solution code here...
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -276,7 +276,7 @@ const snorlaxData = {
 };
 
 const extractStat = (statName, arr) => {
-  // Solution code here...
+  return arr, statName;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -290,7 +290,7 @@ Write a function named extractChildren that, given the array of characters from 
 ------------------------------------------------------------------------------------------------ */
 
 const extractChildren = (arr) => {
-  // Solution code here...
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
