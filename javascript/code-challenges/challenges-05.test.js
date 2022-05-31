@@ -12,12 +12,14 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
+
   let result = [];
   people.map( function(n) {
     let name = `${n.firstName} ${n.lastName}`;
     result.push(name);
   });
   return result;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -28,11 +30,13 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
+
   const initialValue = 0;
   const sum = arr.reduce((accumulator,value) =>
     accumulator + value, initialValue);
   return sum;
 };
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,9 +52,11 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
+
   const sum = arr.reduce((item, purchasePrice) =>
   { return item += purchasePrice.purchasePrice;},0);
   return sum;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,10 +68,12 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
+
   let sum = arr.reduce((previousValue, currentValue) => {
     return currentValue;
   }, 0);
   return sum;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -125,12 +133,14 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
+
   let arr1 = [];
   arr.reduce((previousValue, currentValue) => {
     arr1.push(currentValue.name);
     return previousValue;
   }, []);
   return arr1;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,12 +152,14 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
+
   let arr = str.split('');
   let newStr = arr.reduce((val1,val2) => {
     val1 = val2 + val1;
     return val1;
   }, '');
   return newStr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -200,7 +212,9 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
+
   return arr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -212,7 +226,9 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
+
   return arr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -233,7 +249,9 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
+
   return arr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -276,7 +294,9 @@ const snorlaxData = {
 };
 
 const extractStat = (statName, arr) => {
+
   return arr, statName;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -290,6 +310,7 @@ Write a function named extractChildren that, given the array of characters from 
 ------------------------------------------------------------------------------------------------ */
 
 const extractChildren = (arr) => {
+
   return arr;
 };
 
