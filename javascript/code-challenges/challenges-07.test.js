@@ -6,8 +6,9 @@ CHALLENGE 1 - Review
 Write a function called sortStarWarsCharacters that sorts the characters in the starWarsPeople array by height from tallest to shortest.
 ------------------------------------------------------------------------------------------------ */
 
-let starWarsPeople = [
-  {
+
+let starWarsPeople = [{
+
     name: 'C-3PO',
     height: '167',
     eye_color: 'yellow'
@@ -25,7 +26,10 @@ let starWarsPeople = [
 ];
 
 const sortStarWarsCharacters = (starWarsArr) => {
-  // Solution code here...
+
+
+  return starWarsArr.sort((a, b) => b.height - a.height);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -35,8 +39,12 @@ Write a function named removeThree that takes an index and an array. The functio
 ------------------------------------------------------------------------------------------------ */
 
 const removeThree = (idx, arr) => {
-  // Solution code here...
+
+  arr.splice(idx, 3);
+  return arr;
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -45,7 +53,9 @@ Write a function named joinArray that takes an array and joins all of the elemen
 ------------------------------------------------------------------------------------------------ */
 
 const joinArray = (arr) => {
-  // Solution code here...
+
+  return arr.join(' ');
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +73,12 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  // Solution code here...
+
+  for (let i=0; i<str.length; i++){
+    result.push(str.slice(i));
+  }
+  result.push('');
+
   return result;
 };
 
@@ -76,7 +91,9 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
-  // Solution code here...
+
+  return arr.split('');
+
 };
 
 
@@ -123,7 +140,13 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+
+  for(let n=0; n <recipe.ingredients.length; n++){
+    let arr = recipe.ingredients[n].indexOf(' ', 6);
+    arr = recipe.ingredients[n].slice(arr + 1);
+    result.push(arr);
+  }
+
   return result;
 };
 
