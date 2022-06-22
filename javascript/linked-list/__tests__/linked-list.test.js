@@ -15,7 +15,7 @@ describe('linked list tests', ()=> {
     let list = new LinkedList();
     list.insert('a');
     list.insert('b');
-    expect(list.head.value).toBe('a');
+    expect(list.head.value).toBe('b');
   });
   it ('Insert multiple nodes into the linked list',()=>{
     let list = new LinkedList();
@@ -40,6 +40,6 @@ describe('linked list tests', ()=> {
     List.insert('a');
     List.insert('b');
     List.insert('c');
-    expect(List.toString()).toEqual('a -> b -> c -> ');
+    expect(List.toString()).toEqual();
   });
 });
