@@ -18,8 +18,8 @@ class LinkedList {
       this.tail = newNode;
     }
     else{
-      this.tail.next = newNode;
-      this.tail = newNode;
+      newNode.next = this.head;
+      this.head = newNode;
     }
     this.length++;
   }
@@ -36,21 +36,35 @@ class LinkedList {
   }
 
   toString() {
-    let result = '';
     let newInclude = this.head;
 
-    while (newInclude) {
-      result = result + newInclude.value +' -> ';
-      newInclude = newInclude.next;
+    while (newInclude){
+      console.log(newInclude.value);
+      newInclude= newInclude.next;
     }
-    return result;
   }
+
   print(){
     let newInclude = this.head;
     while (newInclude){
       console.log(newInclude.value);
       newInclude= newInclude.next;
     }
+  }
+  append(value) {
+    let newNode = new Node(value);
+    if (this.head === null) {
+      this.head = newNode;
+      this.tail = newNode;
+    } else {
+      let tempNode = this.head;
+      while (tempNode.next) {
+        tempNode = tempNode.next;
+      }
+      tempNode.next = newNode;
+      this.tail = newNode;
+    }
+    this.length++;
   }
 }
 let newLinkedList = new LinkedList();
