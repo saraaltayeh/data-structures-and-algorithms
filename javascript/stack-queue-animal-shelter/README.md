@@ -12,6 +12,9 @@ pref can be either "dog" or "cat"
 - Return: either a dog or a cat, based on preference.
 If pref is not "dog" or "cat" then return null.
 
+## whiteboard
+
+![code challenge 12](./assets/CODE12.png)
 ## Approach & Efficiency
 
 I used class node and the big O --> time: O(1), space: O(n).
