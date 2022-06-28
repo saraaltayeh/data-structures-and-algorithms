@@ -1,6 +1,6 @@
 'use strict';
 
-const Queue = require('../queue/lib/queue');
+const Queue = require('../queue/queue');
 
 describe('Animal Shelter Test', () => {
   it('Can successfully enqueue a cat', () => {
