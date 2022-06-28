@@ -2,7 +2,7 @@
 
 const Queue = require('../queue/queue');
 
-describe('Animal Shelter Test', () => {
+describe('Test for Animal Shelter', () => {
   it('Can successfully enqueue a cat', () => {
     let shelter = new Queue();
     shelter.enqueue('cat');
