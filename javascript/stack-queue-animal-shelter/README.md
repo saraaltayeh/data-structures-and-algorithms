@@ -15,6 +15,7 @@ If pref is not "dog" or "cat" then return null.
 ## whiteboard
 
 ![code challenge 12](./assets/CODE12.png)
+
 ## Approach & Efficiency
 
 I used class node and the big O --> time: O(1), space: O(n).
