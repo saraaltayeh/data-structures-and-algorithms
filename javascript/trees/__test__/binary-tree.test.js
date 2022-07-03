@@ -4,7 +4,7 @@ const Node = require('../node');
 
 let tree = null;
 
-describe("Binary Tree", () => {
+describe('Binary Tree', () => {
   beforeAll(() => {
     let one = new Node(1);
     let two = new Node(2);
