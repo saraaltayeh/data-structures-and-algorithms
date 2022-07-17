@@ -1,6 +1,6 @@
 'use strict';
 
-const BinaryTree = require('./breadth-first');
+const BinaryTree = require('./tree-breadth');
 const Node = require('./node');
 
 let tree = null;
@@ -25,5 +25,23 @@ three.left = four;
 three.right = five;
 
 tree = new BinaryTree(one);
+function breadthFirst(Tree) {
+  if (Tree.root === null)
+    return 'Empty tree!';
+  let arr = [];
+  let result = [];
+  result.push(Tree.root);
+  while (result.length) {
+    let node = result.shift();
+    arr.push(node.value);
+    if (node.left) {
+      result.push(node.left);
+    }
+    if (node.right) {
+      result.push(node.right);
+    }
+  }
+  return arr;
+}
 
-console.log(tree.breadthFirst());
+console.log(breadthFirst(tree));
