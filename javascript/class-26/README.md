@@ -11,3 +11,7 @@ is a sorting algorithm that traverses the array multiple times as it slowly buil
 
 space: O(1)
 time: O(n^2)
+
+## results
+
+![results](./assets/result.png)
