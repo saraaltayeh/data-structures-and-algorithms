@@ -25,23 +25,44 @@ three.left = four;
 three.right = five;
 
 tree = new BinaryTree(one);
-function breadthFirst(Tree) {
-  if (Tree.root === null)
-    return 'Empty tree!';
-  let arr = [];
-  let result = [];
-  result.push(Tree.root);
-  while (result.length) {
-    let node = result.shift();
-    arr.push(node.value);
-    if (node.left) {
-      result.push(node.left);
-    }
-    if (node.right) {
-      result.push(node.right);
-    }
+
+// function breadthFirst(Tree) {
+//   if (Tree.root === null)
+//     return 'Empty tree!';
+//   let arr = [];
+//   let result = [];
+//   result.push(Tree.root);
+//   while (result.length) {
+//     let node = result.shift();
+//     arr.push(node.value);
+//     if (node.left) {
+//       result.push(node.left);
+//     }
+//     if (node.right) {
+//       result.push(node.right);
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(breadthFirst(tree));
+
+function sumOfAllOdd(BT) {
+  if (BT.root){
+    return 'empty BT';
   }
-  return arr;
+
+  function _sumOdd(node, sum = 0) {
+    if (node === null) {
+      return 0;
+    } else {
+      if (node.value % 2 !== 0) {
+        sum += node.value;
+      }
+    }
+    return sum + _sumOdd(node.left) + _sumOdd(node.right);
+  }
+  return _sumOdd(BT.root);
 }
 
-console.log(breadthFirst(tree));
+console.log(sumOfAllOdd(tree));
