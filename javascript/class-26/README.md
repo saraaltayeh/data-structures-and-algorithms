@@ -4,14 +4,13 @@ is a sorting algorithm that traverses the array multiple times as it slowly buil
 
 ## Whiteboard Process
 
-![Whiteboard 26-1](./assets/code26-1.jpeg)
-![Whiteboard 26-2](./assets/code26-2.jpeg)
+![Whiteboard 26-1](./assets/c26.png)
 
-## Big O
+## Approach & Efficiency
 
-space: O(1)
-time: O(n^2)
+- Big O for space: O(1)
+- Big O for time: O(n^2)
 
-## results
+## solution
 
 ![results](./assets/result.png)
