@@ -1,8 +1,10 @@
-# mergeSort
+# Merge Sort
+
+trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
 
 ## Whiteboard Process
 
-![Whiteboard 27](./assets/)
+![Whiteboard 27](./assets/code27.png)
 
 ## Approach & Efficiency
 
@@ -11,4 +13,4 @@
 
 ## solution
 
-![results](./assets/)
+![result](./assets/test27.png)
