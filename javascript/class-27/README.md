@@ -6,6 +6,11 @@ trace the algorithm by stepping through the process with the provided sample arr
 
 ![Whiteboard 27](./assets/code27.png)
 
+## Tracing
+
+![trace 27](./assets/trace27-1.png)
+![trace 27](./assets/trace27-2.png)
+
 ## Approach & Efficiency
 
 - Big O for space: O(n)
