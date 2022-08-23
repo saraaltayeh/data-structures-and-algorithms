@@ -58,9 +58,7 @@ class HashMap {
       while(result){
         arr.push(Object.keys(result.value));
         result=result.next;
-
       }
-
     });
     return arr;
   }
