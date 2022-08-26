@@ -6,7 +6,7 @@ class Hashmap {
     this.size = size;
     this.map = new Array(size);
   }
-  ////////////get/////////////
+
   get(key) {
     const index = this.makeHash(key);
 
@@ -23,7 +23,7 @@ class Hashmap {
     }
     return value;
   }
-  ///////////////contain////////////////
+
   contain(key) {
     const index = this.makeHash(key);
     let isHere = false;
@@ -38,7 +38,7 @@ class Hashmap {
     }
     return isHere;
   }
-  ////////////keys//////////////
+
   keys(){
     let keys=[];
     this.map.forEach((element)=>{
@@ -49,8 +49,6 @@ class Hashmap {
         currentNode=currentNode.next;
       }
     });
-
-
     return keys;
   }
 
@@ -65,9 +63,6 @@ class Hashmap {
   }
   set(key, value) {
     const hash = this.makeHash(key);
-    // 11 >>> [{'esam', '401d15 student'}>{}]
-    // 11
-    // 3 >> [{}>{}]
     if (!this.map[hash]) {
       this.map[hash] = new LinkedList();
     }
@@ -75,22 +70,20 @@ class Hashmap {
   }
 }
 
-
 const myhashmap = new Hashmap(10);
-myhashmap.set('ayman', '01');
-myhashmap.set('samah', '02');
-myhashmap.set('sarah', '03');
-myhashmap.set('yara', '04');
-myhashmap.set('elyan', '05');
-myhashmap.set('tamara', '06');
-myhashmap.set('ayman', '01');
+myhashmap.set('sara', '01');
+myhashmap.set('rana', '02');
+myhashmap.set('hamza', '03');
+myhashmap.set('khalil', '04');
+myhashmap.set('layan', '05');
+myhashmap.set('ihab', '06');
+myhashmap.set('sanad', '07');
 // myhashmap.map.forEach((ll) => {
 //   console.log(ll.values());
 // })
 
-
-// console.log(myhashmap.get("elyan"));
-// console.log(myhashmap.contain("samah"));
+// console.log(myhashmap.get("sara"));
+// console.log(myhashmap.contain("ihab"));
 // console.log(myhashmap.keys());
 
 module.exports = Hashmap;

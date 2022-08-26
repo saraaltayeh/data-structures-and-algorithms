@@ -1,12 +1,12 @@
 const BinaryTree = require('./binarytree');
 const Node = require('./node');
-// const Hashmap = require('./hashtable');
+
 const tree_intersection = require('./tree_intersection');
-let one = new Node(30);
-let two = new Node(21);
-let three = new Node(40);
-let four = new Node(49);
-let five = new Node(51);
+let one = new Node(35);
+let two = new Node(71);
+let three = new Node(50);
+let four = new Node(29);
+let five = new Node(61);
 
 
 one.left = two;
