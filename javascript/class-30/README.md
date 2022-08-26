@@ -12,11 +12,39 @@ Why do we use them?
 2. Dictionary
 3. Library
 
-
 ## Approach & Efficiency
 
-- Big O for space: O(n)
-- Big O for time: O(1)
+I used hashtable with linkedList approach
+
+- set
+
+O(1) space efficiency
+
+O(n) time efficiency
+
+- get
+
+O(1) space efficiency
+
+O(n) time efficiency
+
+- keys
+
+O(n) space efficiency
+
+O(n) time efficiency
+
+- contain
+
+O(1) space efficiency
+
+O(n) time efficiency
+
+- hash
+
+O(1) space efficiency
+
+O(n) time efficiency
 
 ## API
 
