@@ -21,18 +21,15 @@ class BinaryTree {
     let reverse = (node) => {
       if (node.left) reverse(node.left);
       arr.push(node.value);
-      // console.log("bt",node.value);
       if (node.right) reverse(node.right);
     };
     reverse(this.root);
-    // console.log({arr});
     return arr;
   }
   postOrder() {
     let arr = [];
     let reverse = (node) => {
       if (node.left) reverse(node.left);
-
       if (node.right) reverse(node.right);
       arr.push(node.value);
     };
