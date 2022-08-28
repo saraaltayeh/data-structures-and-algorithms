@@ -16,23 +16,25 @@ describe('test for HashTable', () => {
   });
   it('Successfully returns a list of all unique keys that exist in the hashtable', () => {
     hashTable.set('yafa', 'javascript student');
+    hashTable.set('bana', 'javascript student');
     console.log('keys :', hashTable.keys());
-    expect(hashTable.keys()).toEqual([[["sanad"]], [["kareem"]], [["bana"], ["sally"]]]);
+    expect(hashTable.keys()).toStrictEqual([[['yafa']], [['sara']], [['hello'], ['bana']]]);
   });
   it('Successfully handle a collision within the hashtable', () => {
+    hashTable.set('sara', 'javascript student');
     hashTable.set('ihab', 'javascript student');
-    hashTable.set('hamza', 'javascript student');
-    expect(hashTable.get('ihab')).toEqual([{ ihab: 'javascript student' }, { hamza: 'javascript student' }]);
+    expect(hashTable.get('sara')).toBe([{ sara: 'javascript student' }, { ihab: 'javascript student' }]);
   });
   it('Successfully retrieve a value from a bucket within the hashtable that has a collision', () => {
     hashTable.set('rana', 'javascript student');
-    hashTable.set('rand', 'javascript student');
-    hashTable.set('layan', 'javascript student');
     hashTable.set('sara', 'javascript student');
-    expect(hashTable.get('layan')).toEqual([{ layan: 'javascript student' }, { rand: 'javascript student' }]);
+    hashTable.set('layan', 'javascript student');
+    hashTable.set('rand', 'javascript student');
+    expect(hashTable.get('rana')).toEqual([{ rana: 'javascript student' }, { layan: 'javascript student' }]);
   });
   it('Successfully hash a key to an in-range value', () => {
     hashTable.set('hello', 'world');
     expect(hashTable.hash('hello')).toBeLessThan(10);
   });
+
 });
