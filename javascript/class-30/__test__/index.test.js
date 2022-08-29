@@ -17,7 +17,7 @@ describe('test for HashTable', () => {
   it('Successfully returns a list of all unique keys that exist in the hashtable', () => {
     hashTable.set('yafa', 'javascript student');
     console.log('keys :', hashTable.keys());
-    expect(hashTable.keys()).toEqual([[["sanad"]], [["kareem"]], [["bana"], ["sally"]]]);
+    expect(hashTable.keys()).toEqual([[['sanad']], [['kareem']], [['bana'], ['sally']]]);
   });
   it('Successfully handle a collision within the hashtable', () => {
     hashTable.set('ihab', 'javascript student');
