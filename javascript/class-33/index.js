@@ -1,4 +1,4 @@
-const linkedList = require('./linkedList');
+const LinkedList = require('./linkedList');
 
 class HashMap {
   constructor(size){
@@ -19,7 +19,7 @@ class HashMap {
     const hash=this.makeHash(key);
 
     if (!this.map[hash]) {
-      this.map[hash] = new linkedList();
+      this.map[hash] = new LinkedList();
     }
     this.map[hash].append({ [key]: value });
   }
