@@ -18,7 +18,9 @@ describe('test for HashTable', () => {
     hashTable.set('yafa', 'javascript student');
     hashTable.set('bana', 'javascript student');
     console.log('keys :', hashTable.keys());
+
     expect(hashTable.keys()).toStrictEqual([[['yafa']], [['sara']], [['hello'], ['bana']]]);
+
   });
   it('Successfully handle a collision within the hashtable', () => {
     hashTable.set('sara', 'javascript student');
