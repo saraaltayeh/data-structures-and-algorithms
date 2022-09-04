@@ -147,10 +147,15 @@ class LinkedList {
 
 const l1 = new LinkedList();
 // const l2 = new LinkedList();
+// const l3 = new LinkedList();
+
 l1.append(1);
 l1.append(2);
-l1.append(2);
-l1.append(1);
+l1.append(3);
+l1.append(8);
+
+// l2.append(7);
+// l2.append(9);
 // l1.append(4);
 // l1.append(6);
 
@@ -164,4 +169,6 @@ l1.append(1);
 console.log((l1.reverse(l1)).tostring());
 // console.log(l1.removeDuplicate().tostring());
 
-console.log('is Palindrom: ', (l1.isplindrome()));
+// console.log('is Palindrom: ', (l1.isplindrome()));
+// console.log((l3.zipll(l1,l2).tostring()));
+console.log((l1.findlist(3)));
