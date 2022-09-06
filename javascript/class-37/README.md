@@ -6,8 +6,8 @@ create the function that will traverse a graph using Breadth First.
 
 O(n) space efficiency
 
-O(n) time efficiency
+O(1) time efficiency
 
 ## Solution
 
-node graphs.js
+![](./assets/graphcode.png)
