@@ -6,7 +6,7 @@ create the function that will traverse a graph using Breadth First.
 
 O(n) space efficiency
 
-O(1) time efficiency
+O(n) time efficiency
 
 ## Solution
 
