@@ -43,7 +43,8 @@ class BinaryTree {
 
   Max() {
     let max = 0;
-    let traverse = (node) => {
+
+    function traverse(node) {
       if (node.value > max) {
         max = node.value;
       }
@@ -53,7 +54,7 @@ class BinaryTree {
       if (node.right) {
         traverse(node.right);
       }
-    };
+    }
     traverse(this.root);
     return max;
   }
